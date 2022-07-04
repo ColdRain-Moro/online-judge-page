@@ -31,7 +31,7 @@ function App() {
               <MenuItem value={"L1"}>L1</MenuItem>
             </Select>
           </FormControl>
-          <TextField label="Token" variant='outlined' style={{ margin: '10px', width: '500px' }} name="token" value={token} onChange={(e) => setLab(e.target.value)}></TextField>
+          <TextField label="Token" variant='outlined' style={{ margin: '10px', width: '500px' }} name="token" value={token} onChange={(e) => setToken(e.target.value)}></TextField>
           <Button variant='outlined' color='info' style={{ margin: '20px', fontSize: 18 }}>
             <a href="javascript:;" className='file-a'>
               <label>
