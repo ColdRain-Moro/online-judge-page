@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material'
+import { addOrUpdateQuery, getQueryVariable } from './utils'
 
 function App() {
 
-  const [lab, setLab] = useState("LX")
+  const [lab, setLab] = useState(getQueryVariable("lab") || "LX")
   const [token, setToken] = useState("")
 
   const onCheck = () => {
@@ -23,7 +24,10 @@ function App() {
             <Select
               value={lab}
               label="实验序号"
-              onChange={(e) => setLab(e.target.value)}
+              onChange={(e) => {
+                setLab(e.target.value)
+                addOrUpdateQuery("lab", e.target.value)
+              }}
               name="lab"
             >
               <MenuItem value={"LX"}>LX</MenuItem>
