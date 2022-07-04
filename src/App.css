@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.blur-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(156, 156, 156, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.795);
+  font-family: Old English Text MT,EngraversOldEnglishBT-Bold,Lato,PingFang SC,Microsoft YaHei,sans-serif;
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.file-inp {
+  cursor: pointer;
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-a {
+  text-decoration: none;
+  color: #0288d1;
+}
+
+.wallpaper {
+  background: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
